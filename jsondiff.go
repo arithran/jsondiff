@@ -277,6 +277,27 @@ func (ctx *context) printDiff(a, b interface{}) {
 		}
 	case reflect.Slice:
 		sa, sb := a.([]interface{}), b.([]interface{})
+
+		if len(sa) > 0 && len(sb) > 0 {
+			switch sa[0].(type) {
+			case string:
+				// if the first item is a string, let check if all the items are strings
+				allStrings := true
+				for _, v := range append(sa, sb...) {
+					if _, ok := v.(string); !ok {
+						allStrings = false
+						break
+					}
+				}
+
+				if allStrings {
+					// sort
+					sort.Slice(sb, func(i, j int) bool { return sb[i].(string) < sb[j].(string) })
+					sort.Slice(sa, func(i, j int) bool { return sa[i].(string) < sa[j].(string) })
+				}
+			}
+		}
+
 		salen, sblen := len(sa), len(sb)
 		max := salen
 		if sblen > max {

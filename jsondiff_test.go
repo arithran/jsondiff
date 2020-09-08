@@ -23,6 +23,7 @@ var cases = []struct {
 	{`{"a": 3.1415}`, `{"a": 3.1415}`, FullMatch},
 	{`{"a": 4213123123}`, `{"a": "4213123123"}`, NoMatch},
 	{`{"a": 4213123123}`, `{"a": 4213123123}`, FullMatch},
+	{`{"a": 123, "b": 456, "c": ["baz", "foo"]}`, `{"a": 123, "c": ["foo", "baz"]}`, SupersetMatch},
 }
 
 func TestCompare(t *testing.T) {

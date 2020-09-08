@@ -1,0 +1,6 @@
+github.com/gopherjs/gopherjs v0.0.0-20200217142428-fce0ec30dd00 h1:l5lAOZEym3oK3SQ2HBHWsJUfbNBiTXJDeW2QDxw9AQ0=
+github.com/gopherjs/gopherjs v0.0.0-20200217142428-fce0ec30dd00/go.mod h1:wJfORRmW1u3UXTncJ5qlYoELFm8eSnnEO6hX4iZ3EWY=
+github.com/gopherjs/jquery v0.0.0-20191017083323-73f4c7416038 h1:/gx6joY4PjXUu6mKM4yx7yj9Ti6yP8ljOxY/Qt0J25g=
+github.com/gopherjs/jquery v0.0.0-20191017083323-73f4c7416038/go.mod h1:xKR3tvLne+vYYPH9d4DM8X9MKlNV2yXDEomxulcK218=
+github.com/nsf/jsondiff v0.0.0-20200515183724-f29ed568f4ce h1:RPclfga2SEJmgMmz2k+Mg7cowZ8yv4Trqw9UsJby758=
+github.com/nsf/jsondiff v0.0.0-20200515183724-f29ed568f4ce/go.mod h1:uFMI8w+ref4v2r9jz+c9i1IfIttS/OkmLfrk1jne5hs=
